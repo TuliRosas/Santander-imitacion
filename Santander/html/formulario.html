@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link href="../style.css" rel="stylesheet" />
+  </head>
+  <div>
+    <div class="header">
+      <header>
+        <img src="../img/logo.png" width="100" height="100" />
+      </header>
+    </div>
+    <div class="registro">
+      <body>
+        <h2>Registro</h2>
+        <p id="Pregistro">Primero registrese en el banco completando este formulario</p>
+        <form action="Completado.html">
+          <label for="GET-name">Nombre</label>
+          <input
+            id="GET-name"
+            required
+            type="text"
+            name="name"
+            placeholder="Nombre y Apellido"
+          />
+          <label > Sexo </label>
+          <div class="sexo">
+          <label class="sexolab" > Masculino
+            <input required class="sexoin" name="sexo" type="radio" value="masc">
+          </label>
+          <label class="sexolab" > Femenino
+            <input required class="sexoin" name="sexo" type="radio" value="fem">
+          </label>
+          <label class="sexolab"> Otro
+            <input required class="sexoin" name="sexo" type="radio" value="otro">
+          </label>
+        </div>
+
+       
+      
+          <label for="GET-nacimiento">Fecha de nacimiento</label>
+          <input
+            id="GET-nacimiento"
+            required
+            type="date"
+            name="nacimiento"
+            placeholder="DD/MM/AAAA"
+          />
+        
+          <label for="GET-pais">Pais</label>
+          <select name="pais" required id="GET-pais" placeholder="pais">
+            <option value="Arg">Argentina</option>
+            <option value="Br">Brasil</option>
+            <option value="Chi">Chile</option>
+            <option value="Urg">Uruguay</option>
+          </select>
+        
+          <label for="GET-mail">Email</label>
+          <input
+            id="GET-mail"
+            required
+            type="email"
+            name="mail"
+            placeholder="Email"
+          />
+          <label for="GET-password">Contraseña</label>
+          <input
+            id="GET-password"
+            required
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+          />
+          <label for="GET-Reppassword">Repetir Contraseña</label>
+          <input
+            id="GET-Reppassword"
+            required
+            type="password"
+            name="Reppassword"
+            placeholder="Repetir Contraseña">
+          <label for="GET-tarjeta">Numero de Tarjeta</label>
+          <input
+            id="GET-tarjeta"
+            required
+            type="text"
+            name="tarjeta"
+            placeholder="#### #### #### ####"
+          />
+          <label for="GET-codigo">Codigo de seguridad</label>
+          <input
+            id="GET-codigo"
+            required
+            type="password"
+            name="codigo"
+            placeholder="###"
+          />
+          <label for="GET-vencimiento">Vencimiento</label>
+          <input
+            id="GET-vencimiento"
+            required
+            type="month"
+            name="Vencimiento"
+            placeholder="MM"
+          />
+          <label for="GET-telefono">Numero de telefono</label>
+          <input
+            id="GET-telefono"
+            required
+            type="tel"
+            name="telefono"
+            placeholder="(Codigo de area) Numero"
+          />
+          <label for="textarea">¿Algun dato interesante sobre tus contraseñas?</label>
+          <br>
+          <textarea id="textarea" rows="10" cols="60"></textarea>
+          <br>
+          <div class="check">
+          <label for="Checkbox">Acepto Terminos de uso y condiciones</label>
+          <input required id="Checkbox" name="terminos" type="checkbox" value="Acepta">
+        </div>
+        
+        <input id="submit" type="submit" value="Ingresar Datos" onclick= />
+       
+        </form>
+      </body>
+    </div>
+  </div>
+</html>
